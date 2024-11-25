@@ -24,20 +24,24 @@
             margin: 0;
         }
 
-        img.profile {
-            display: block;
+        section {
+            width: 70%;
             margin: 20px auto;
-            border-radius: 50%;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .about-me {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        img.profile {
             width: 150px;
             height: 150px;
             object-fit: cover;
-        }
-
-        section {
-            width: 70%; /* Set width to 70% of the viewport */
-            margin: 20px auto;
-            padding: 0 20px; /* Add padding for space on the sides */
-            text-align: left; /* Keep text left-aligned */
+            border-radius: 50%;
         }
 
         footer {
@@ -46,6 +50,15 @@
             background-color: #4CAF50;
             color: white;
             text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
 
         a {
@@ -64,13 +77,13 @@
         <p>Researcher | Engineer | Software Developer</p>
     </header>
 
-    <img src="my_photo.jpg" alt="Mohammad Soltanshah" class="profile">
-
     <section>
-        <p>
-            I am a PhD candidate in Engineering Science at Simon Fraser University, specializing in machine learning for robotic grasping and visual servoing in robotic manipulation. Previously, I completed my M.Sc. at Isfahan University of Technology, where my thesis focused on SLAM-based navigation for ground mobile robots. 
-        </p>
-    
+        <div class="about-me">
+            <img src="my_photo.jpg" alt="Mohammad Soltanshah" class="profile">
+            <p>
+                I am a PhD candidate in Engineering Science at Simon Fraser University, specializing in machine learning for robotic grasping and visual servoing in robotic manipulation. Previously, I completed my M.Sc. at Isfahan University of Technology, where my thesis focused on SLAM-based navigation for ground mobile robots. 
+            </p>
+        </div>
     </section>
 
     <section>
@@ -94,13 +107,11 @@
             <li>
                 Instructor, ENSC 204: Graphical Communication for Engineering, Simon Fraser University, Fall 2024, <a href="https://www.sfu.ca/outlines.html?2024/fall/ensc/204/e100">course outline</a>
             </li>
-            
         </ul>
     </section>
 
     <footer>
-        <li><a href="mohammad_soltanshah@sfu.ca">email</a></li>
+        <p>Contact: <a href="mailto:mohammad_soltanshah@sfu.ca">mohammad_soltanshah@sfu.ca</a></p>
     </footer>
-
 </body>
 </html>
