@@ -3,7 +3,7 @@
 <head>
     <meta name="robots" content="index, follow">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="Personal website of Mohammad Soltanshah, Instructor and Ph.D. candidate at Simon Fraser University specializing in machine learning and robotics.">
     <meta name="keywords" content="Mohammad Soltanshah, Ph.D. candidate, robotics, machine learning, visual servoing, Simon Fraser University">
 
@@ -16,39 +16,42 @@
             background-color: #f5f5f5;
             color: #333;
             font-size: 16px;
+            line-height: 1.6;
         }
 
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
+            font-size: 24px;
         }
 
         section {
-            width: 70%;
+            max-width: 100%;
             margin: 20px auto;
-            padding: 0 20px;
+            padding: 0 5%;
             text-align: left;
-            font-size: 20px;
         }
 
         .about-me {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 20px;
-            font-size: 20px;
+            font-size: 18px;
+            text-align: center;
         }
 
         img.profile {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             border-radius: 50%;
+            border: 2px solid #4CAF50;
         }
 
         footer {
@@ -57,6 +60,7 @@
             background-color: #4CAF50;
             color: white;
             text-align: center;
+            font-size: 14px;
         }
 
         footer a {
@@ -68,6 +72,19 @@
             text-decoration: underline;
         }
 
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
         a {
             color: #4CAF50;
             text-decoration: none;
@@ -75,6 +92,45 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .about-me {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            img.profile {
+                width: 200px;
+                height: 200px;
+            }
+
+            section {
+                width: 70%;
+                padding: 0 20px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+        }
+
+        /* Adjust image sizes for smaller screens */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Fix touch issues in iOS */
+        * {
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            touch-action: manipulation;
         }
 
         #about-me a {
@@ -93,10 +149,10 @@
         <h1>Mohammad Soltanshah</h1>
         <p>Researcher | Software Developer | Instructor</p>
         <nav>
-            <ul style="list-style-type: none; display: flex; justify-content: center; padding: 0;">
-                <li style="margin: 0 20px;"><a href="#about-me">About Me</a></li>
-                <li style="margin: 0 20px;"><a href="#publications">Publications</a></li>
-                <li style="margin: 0 20px;"><a href="#teaching">Teaching</a></li>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
             </ul>
         </nav>
     </header>
