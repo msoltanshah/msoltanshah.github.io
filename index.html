@@ -236,6 +236,62 @@
             }
         }
 
+        #projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #projects li {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4CAF50;
+            border-radius: 6px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .project-image {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .project-content {
+            flex: 1;
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .project-desc {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .project-link a {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            #projects li {
+                flex-direction: column;
+            }
+
+            .project-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+
 
     </style>
 </head>
@@ -264,48 +320,6 @@
             </p>
         </div>
     </section>
-
-    <!-- <section id="publications">
-        <h3>Publications</h3>
-        <ul>
-            <li style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-                <img src="papers/paper11.png" alt="Paper 1 Image" style="width: 200px; height: 150px; margin-right: 15px; object-fit: cover; border: 1px solid #ccc; padding: 5px;">
-                <div>
-                    <strong>Toward Autonomous Aerial Object Retrieval Utilizing RL-based Eye-to-hand/Eye-in-hand Feature Matching 
-                        and Controllable-space Image Planning for Partitioned Visual Servoing</strong><br>
-                    <span style="font-size: smaller;"><strong>Mohammad Soltanshah</strong>, Abolfazl Eskandarpour, Kamal Gupta, and Mehran Mehrandezh</span><br>
-                    <span style="font-size: smaller;"><i>Submitted to IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025.</i></span>
-                </div>
-            </li>
-    
-            <li style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-                <img src="papers/paper2.png" alt="Paper 2 Image" style="width: 200px; height: 150px; margin-right: 15px; object-fit: cover; border: 1px solid #ccc; padding: 5px;">
-                <div>
-                    <strong>Robust Partitioned Visual Servoing for Aerial Manipulation Utilizing Controllable-space Planning and Adaptive Image Representation</strong><br>
-                    <span style="font-size: smaller;"><strong>Mohammad Soltanshah</strong>, Abolfazl Eskandarpour, Mehran Mehrandezh, and Kamal Gupta</span><br>
-                    <span style="font-size: smaller;"><i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024.</i></span>
-                </div>
-            </li>
-    
-            <li style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-                <img src="papers/paper3.png" alt="Paper 3 Image" style="width: 200px; height: 150px; margin-right: 15px; object-fit: cover; border: 1px solid #ccc; padding: 5px;">
-                <div>
-                    <strong>Hybrid Dynamic Modelling Using Feedforward and Temporal Convolutional Networks and Robust Control Scheme for Aerial Manipulators</strong><br>
-                    <span style="font-size: smaller;">Abolfazl Eskandarpour, <strong>Mohammad Soltanshah</strong>, Kamal Gupta, and Mehran Mehrandezh</span><br>
-                    <span style="font-size: smaller;"><i>IEEE International Conference on Automation Science and Engineering (CASE), 2024.</i></span>
-                </div>
-            </li>
-    
-            <li style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-                <img src="papers/paper4.png" alt="Paper 4 Image" style="width: 200px; height: 150px; margin-right: 15px; object-fit: cover; border: 1px solid #ccc; padding: 5px;">
-                <div>
-                    <strong>A Constrained Robust Switching MPC Structure for tilt-rotor UAV Trajectory Tracking Problem</strong><br>
-                    <span style="font-size: smaller;">Abolfazl Eskandarpour, Mehran Mehrandezh, Kamal Gupta, Alejandro Ramirez-Serrano, and <strong>Mohammad Soltanshah</strong></span><br>
-                    <span style="font-size: smaller;"><i>Nonlinear Dynamics, 111(18), 17247-17275, 2023.</i></span>
-                </div>
-            </li>
-        </ul>
-    </section><br> -->
 
     <section id="publications">
         <h3>Publications</h3>
@@ -375,7 +389,7 @@
         </ul>
     </section>
 
-    <section id="projects">
+    <!-- <section id="projects">
         <h3>Some Personal Projects</h3>
         <ul>
             <li style="display: flex; align-items: center; margin-bottom: 20px;">
@@ -428,31 +442,78 @@
                 
             </li>
         </ul>
-    </section>
-
-    <!-- <section id="teaching">
-        <h3>Teaching</h3>
-        <ul>
-            <li>
-                <strong>Instructor</strong>, CMPT 310: Introduction to Artificial Intelligence, Simon Fraser University,
-                 Spring 2026, <a href="https://www.sfu.ca/outlines.html?2026/spring/cmpt/310/d200">[course outline]</a><br><br>
-                 Artificial intelligence is an area with vast application scenarios. This course is intended as a prerequisite
-                  for advanced-level AI courses and covers the fundamental concepts and foundational mathematical formulations
-                   in machine learning and AI. Topics include supervised learning, linear regression, gradient descent, search
-                    algorithms, Markov decision processes, and Bayes nets.<br><br>
-                  
-            </li>
-            <li>
-                <strong>Instructor</strong>, ENSC 204: Graphical Communication for Engineering, Simon Fraser University,
-                 Fall 2024, <a href="https://www.sfu.ca/outlines.html?2024/fall/ensc/204/e100">[course outline]</a><br><br>
-                 An overview of engineering graphical communication, Computer-Aided Design (CAD), and workshop practices.
-                 The course aims to enhance students' proficiency in using graphics to convey engineering concepts and their skills in visualizing 
-                 and developing 3D models. It introduces the application of CAD software for creating 3D solid models and familiarizes students with
-                  the ASME Y14.5 GD&T Standard. Additionally, students explore various simulation analyses of mechanical/electrical components.<br><br>
-                  
-            </li>
-        </ul>
     </section> -->
+    <section id="projects">
+        <h3>Some Personal Projects</h3>
+        <ul>
+    
+            <li>
+                <img src="projects/jacobian_estimation.png" class="project-image">
+                <div class="project-content">
+                    <div class="project-title">
+                        Aerial Manipulation Configuration Estimation Using RGB Images and Keras API
+                    </div>
+                    <div class="project-desc">
+                        This project focuses on estimating the configuration of an aerial manipulator using RGB images.
+                        The system leverages eye-to-hand and eye-in-hand cameras for perception and applies regression-based
+                        deep learning models for pose estimation, along with visualization and analysis tools.
+                    </div>
+                    <div class="project-link">
+                        <a href="https://github.com/msoltanshah/configuration_estimation_aerial_manipulation" target="_blank">[GitHub]</a>
+                    </div>
+                </div>
+            </li>
+    
+            <li>
+                <img src="projects/practical_setup_3.png" class="project-image">
+                <div class="project-content">
+                    <div class="project-title">
+                        Moving-object Visual Servoing and Grasping using Open Manipulator
+                    </div>
+                    <div class="project-desc">
+                        A ROS-based system for vision-based grasping of moving objects. The framework integrates pose estimation,
+                        visual servoing, and grasp execution, along with utilities for transformations and matrix operations.
+                    </div>
+                    <div class="project-link">
+                        <a href="https://github.com/msoltanshah/visual_servoing_and_grasping_open_manipulator" target="_blank">[GitHub]</a>
+                    </div>
+                </div>
+            </li>
+    
+            <li>
+                <img src="projects/rotary_tilting_wing_robot.png" class="project-image">
+                <div class="project-content">
+                    <div class="project-title">
+                        Rotary-tilting-wing Robot Modeling and Execution
+                    </div>
+                    <div class="project-desc">
+                        Simscape/Simulink models for simulating the dynamics and control of a rotary-tilting-wing aerial system,
+                        enabling testing of control strategies and system behaviors in a configurable environment.
+                    </div>
+                    <div class="project-link">
+                        <a href="https://github.com/msoltanshah/rotary_tilting_wing_robot_modeling" target="_blank">[GitHub]</a>
+                    </div>
+                </div>
+            </li>
+    
+            <li>
+                <img src="projects/astar_visualization.png" class="project-image">
+                <div class="project-content">
+                    <div class="project-title">
+                        A* Pathplanning Implementation and Visualization
+                    </div>
+                    <div class="project-desc">
+                        A C++ visualization of the A* algorithm using SFML. The tool demonstrates pathfinding in a 2D grid
+                        with obstacles, start/end points, and animated exploration.
+                    </div>
+                    <div class="project-link">
+                        <a href="https://github.com/msoltanshah/astar_visualization" target="_blank">[GitHub]</a>
+                    </div>
+                </div>
+            </li>
+    
+        </ul>
+    </section>
 
     <section id="teaching">
         <h3>Teaching</h3>
