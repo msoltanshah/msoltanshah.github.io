@@ -180,6 +180,62 @@
             line-height: 1.7;
         }
 
+        #publications ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #publications li {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4CAF50;
+            border-radius: 6px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .pub-image {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .pub-content {
+            flex: 1;
+        }
+
+        .pub-title {
+            font-weight: bold;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .pub-authors {
+            font-size: 14px;
+            color: #444;
+        }
+
+        .pub-venue {
+            font-size: 14px;
+            color: #777;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            #publications li {
+                flex-direction: column;
+            }
+
+            .pub-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+
 
     </style>
 </head>
@@ -209,7 +265,7 @@
         </div>
     </section>
 
-    <section id="publications">
+    <!-- <section id="publications">
         <h3>Publications</h3>
         <ul>
             <li style="display: flex; align-items: flex-start; margin-bottom: 20px;">
@@ -249,7 +305,75 @@
                 </div>
             </li>
         </ul>
-    </section><br>
+    </section><br> -->
+
+    <section id="publications">
+        <h3>Publications</h3>
+        <ul>
+    
+            <li>
+                <img src="papers/paper11.png" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">
+                        Toward Autonomous Aerial Object Retrieval Utilizing RL-based Eye-to-hand/Eye-in-hand Feature Matching 
+                        and Controllable-space Image Planning for Partitioned Visual Servoing
+                    </div>
+                    <div class="pub-authors">
+                        <strong>Mohammad Soltanshah</strong>, Abolfazl Eskandarpour, Kamal Gupta, and Mehran Mehrandezh
+                    </div>
+                    <div class="pub-venue">
+                        Submitted to IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025
+                    </div>
+                </div>
+            </li>
+    
+            <li>
+                <img src="papers/paper2.png" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">
+                        Robust Partitioned Visual Servoing for Aerial Manipulation Utilizing Controllable-space Planning and Adaptive Image Representation
+                    </div>
+                    <div class="pub-authors">
+                        <strong>Mohammad Soltanshah</strong>, Abolfazl Eskandarpour, Mehran Mehrandezh, and Kamal Gupta
+                    </div>
+                    <div class="pub-venue">
+                        IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024
+                    </div>
+                </div>
+            </li>
+    
+            <li>
+                <img src="papers/paper3.png" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">
+                        Hybrid Dynamic Modelling Using Feedforward and Temporal Convolutional Networks and Robust Control Scheme for Aerial Manipulators
+                    </div>
+                    <div class="pub-authors">
+                        Abolfazl Eskandarpour, <strong>Mohammad Soltanshah</strong>, Kamal Gupta, and Mehran Mehrandezh
+                    </div>
+                    <div class="pub-venue">
+                        IEEE International Conference on Automation Science and Engineering (CASE), 2024
+                    </div>
+                </div>
+            </li>
+    
+            <li>
+                <img src="papers/paper4.png" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">
+                        A Constrained Robust Switching MPC Structure for tilt-rotor UAV Trajectory Tracking Problem
+                    </div>
+                    <div class="pub-authors">
+                        Abolfazl Eskandarpour, Mehran Mehrandezh, Kamal Gupta, Alejandro Ramirez-Serrano, and <strong>Mohammad Soltanshah</strong>
+                    </div>
+                    <div class="pub-venue">
+                        Nonlinear Dynamics, 111(18), 17247-17275, 2023
+                    </div>
+                </div>
+            </li>
+    
+        </ul>
+    </section>
 
     <section id="projects">
         <h3>Some Personal Projects</h3>
